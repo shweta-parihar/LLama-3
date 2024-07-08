@@ -1,4 +1,4 @@
-# FOR SERIAL OPERATION ON GPU:
+## FOR SERIAL OPERATION ON GPU:
 
 1. Run below command from terminal CLI.
 
@@ -11,7 +11,7 @@
 3. After running above file, results will be saved in file "df_results.parquet" in the current directory.
 
 
-# FOR PARALLEL OPERATION ON MULTIPLE GPUs:
+## FOR PARALLEL OPERATION ON MULTIPLE GPUs:
 
 1. Run below command from terminal CLI.
 
