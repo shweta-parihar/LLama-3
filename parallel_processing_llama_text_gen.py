@@ -150,7 +150,7 @@ if __name__ == "__main__":
     df_results = pd.concat(df_results_list, ignore_index=True)
 
     # Save the dataframe with results
-    df_results.to_parquet('df_short_results.parquet', engine='fastparquet', compression='gzip')
+    df_results.to_parquet('df_results_parallel.parquet', engine='fastparquet', compression='gzip')
 
     hours, minutes, seconds = format_time(int(time_4 - time_3))
     
