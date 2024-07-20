@@ -13,12 +13,13 @@
 
 ## FOR PARALLEL OPERATION ON MULTIPLE GPUs:
 
+### For LLM Inference
 1. Run below command from terminal CLI.
 
       $ pip install -r requirements.txt
 
-2. Run "parallel_processing_llama_text_gen.py" file
+2. Run "parallel_processing_LLM.py" file
    
-      $ python parallel_processing_llama_text_gen.py
+      $ python parallel_processing_LLM.py
    
-3. After running above file, results will be saved in file "df_results_parallel.parquet" in the current directory.
+3. After running above file, results will be saved in multiple parquet files in the current directory. Eg. df_10k_LLM_results_1, df_10k_LLM_results_2 and so on. Number of files generated for results will be equal to the number of GPUs used.
