@@ -89,7 +89,7 @@ def llm_process(df, gpu_device, file_name):
     
     # df = pd.read_parquet("df_short.parquet", engine='fastparquet')  
         
-    df['llm_answer'] = df['modified_prompt'].progress_apply(lambda x: generate_response(x, text_gen_pipeline))
+    df['llm_answer'] = df['modified_rag_prompt'].progress_apply(lambda x: generate_response(x, text_gen_pipeline))
     
     # Save the dataframe with results
     file_name_parts = file_name.split('.')
