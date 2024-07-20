@@ -123,7 +123,7 @@ if __name__ == "__main__":
             print(f"  Total Memory: {torch.cuda.get_device_properties(i).total_memory / 1024 ** 3:.2f} GB")
 
 
-    file_name = "df_prompts_comb_8192_shuffled_10.parquet"
+    file_name = "df_10k_LLM.parquet"
     df = pd.read_parquet(file_name, engine='fastparquet')  
     df_list = np.array_split(df, num_gpus)
 
