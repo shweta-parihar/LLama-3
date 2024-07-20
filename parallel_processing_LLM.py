@@ -51,7 +51,7 @@ def llm_process(df, gpu_device, file_name):
     config_data = json.load(open("config.json"))
     
     HF_TOKEN = config_data["HF_TOKEN"]
-    model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+    model_id = "meta-llama/Meta-Llama-3-70B-Instruct"
     
     tokenizer = AutoTokenizer.from_pretrained(model_id,
                                               token=HF_TOKEN)
