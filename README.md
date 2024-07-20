@@ -23,3 +23,14 @@
       $ python parallel_processing_LLM.py
    
 3. After running above file, results will be saved in multiple parquet files in the current directory. Eg. df_10k_LLM_results_1, df_10k_LLM_results_2 and so on. Number of files generated for results will be equal to the number of GPUs used.
+
+### For RAG Inference
+1. Run below command from terminal CLI.
+
+      $ pip install -r requirements.txt
+
+2. Run "parallel_processing_RAG.py" file
+   
+      $ python parallel_processing_RAG.py
+   
+3. After running above file, results will be saved in multiple parquet files in the current directory. Eg. df_10k_RAG_results_1, df_10k_RAG_results_2 and so on. Number of files generated for results will be equal to the number of GPUs used.
